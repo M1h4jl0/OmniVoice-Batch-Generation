@@ -37,3 +37,46 @@ If you want to run the application from the Python source code, ensure you have 
 ```bash
 git clone [https://github.com/M1h4jl0/OmniVoice-Batch-Generation.git](https://github.com/M1h4jl0/OmniVoice-Batch-Generation.git)
 cd OmniVoice-Batch-Generation
+```
+
+### 2. Set Up Your Virtual Environment
+It is highly recommended to use an isolated environment to prevent version conflicts with your global libraries:
+
+```bash
+# Create the environment
+python -m venv venv
+
+# Activate it (Windows Command Prompt)
+venv\Scripts\activate
+
+# Activate it (Windows PowerShell)
+.\venv\Scripts\Activate.ps1
+```
+
+### 3. Install GPU-Accelerated Dependencies
+Because OmniVoice relies on heavy neural network processing, you need the CUDA-enabled version of PyTorch to run generation tasks on your graphics card instead of your CPU:
+
+```bash
+# Install core audio processing and voice libraries
+pip install soundfile omnivoice
+
+# Install PyTorch with native CUDA 12.1 support
+pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121) --force-reinstall
+```
+### 4. Run the Application
+Once the dependencies are successfully built inside your environment, boot up the interface:
+
+```bash
+python app.py
+```
+
+##📖 How to Use the Software
+Output Directory: Click Browse... and select the destination folder where you want your generated audio files saved.
+
+Select Slide Text File: Choose the .txt document containing your narration scripts. Ensure different segments are cleanly divided by a line containing only ---.
+
+Select Reference Voice Sample: Choose a short, clean, noise-free .wav audio file of the voice you intend to clone.
+
+Reference Audio Text: Paste the exact text spoken in your reference audio sample into the text box. This aligns the neural network's phonetic dictionary.
+
+Generate: Click Translate & Generate Audio. Keep an eye on your command line terminal to monitor initialization and GPU utilization metrics!
