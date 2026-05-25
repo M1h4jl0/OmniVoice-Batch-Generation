@@ -77,3 +77,9 @@ python app.py
 * **Select Reference Voice Sample:** Choose a short, clean, noise-free `.wav` audio file of the voice you intend to clone.
 * **Reference Audio Text:** Paste the exact text spoken in your reference audio sample into the text box. This aligns the neural network's phonetic dictionary.
 * **Generate:** Click **Translate & Generate Audio**. Keep an eye on your command line terminal to monitor initialization and GPU utilization metrics!
+
+## 💾 Looking for the Desktop Executable?
+
+If you prefer a plug-and-play desktop application without setting up a development workspace, head over to the **Releases** tab on the right side of this page.
+
+Download the zipped distribution file, unpack it completely to your hard drive, and launch **`app.exe`** directly!
