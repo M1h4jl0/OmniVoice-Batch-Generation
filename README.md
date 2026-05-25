@@ -70,13 +70,10 @@ Once the dependencies are successfully built inside your environment, boot up th
 python app.py
 ```
 
-##📖 How to Use the Software
-Output Directory: Click Browse... and select the destination folder where you want your generated audio files saved.
+## 📖 How to Use the Software
 
-Select Slide Text File: Choose the .txt document containing your narration scripts. Ensure different segments are cleanly divided by a line containing only ---.
-
-Select Reference Voice Sample: Choose a short, clean, noise-free .wav audio file of the voice you intend to clone.
-
-Reference Audio Text: Paste the exact text spoken in your reference audio sample into the text box. This aligns the neural network's phonetic dictionary.
-
-Generate: Click Translate & Generate Audio. Keep an eye on your command line terminal to monitor initialization and GPU utilization metrics!
+* **Output Directory:** Click *Browse...* and select the destination folder where you want your generated audio files saved.
+* **Select Slide Text File:** Choose the `.txt` document containing your narration scripts. Ensure different segments are cleanly divided by a line containing only `---`.
+* **Select Reference Voice Sample:** Choose a short, clean, noise-free `.wav` audio file of the voice you intend to clone.
+* **Reference Audio Text:** Paste the exact text spoken in your reference audio sample into the text box. This aligns the neural network's phonetic dictionary.
+* **Generate:** Click **Translate & Generate Audio**. Keep an eye on your command line terminal to monitor initialization and GPU utilization metrics!
